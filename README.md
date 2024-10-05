@@ -26,4 +26,4 @@ php artisan serve
 ```
 
 ### Info
-- Akun superadmin => username = sipokesip | password = 12345678
+- Akun superadmin => username = admin | password = 12345678

@@ -15,17 +15,7 @@
     <div class="card">
         <div class="card-body">
             <div class="row">
-                <div class="col-12 col-md-3">
-                    <div class="form-group">
-                        <label for="#">Tipe</label>
-                        <select name="filterTipe" id="filterTipe" class="form-control">
-                            <option value="">Pilih...</option>
-                            @foreach ($tipeses as $key => $value)
-                                <option value="{{ $key }}">{{ $value }}</option>
-                            @endforeach
-                        </select>
-                    </div>
-                </div>
+                
                 <div class="col-12 col-md-3">
                     <div class="form-group">
                         <label for="#">Tingkatan</label>

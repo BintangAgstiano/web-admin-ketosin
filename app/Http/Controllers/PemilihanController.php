@@ -11,8 +11,6 @@ class PemilihanController extends Controller
 {
     protected $tipeses = [
         '1' => "Siswa",
-        '2' => "Guru",
-        '3' => "Karyawan",
     ];
 
     protected $tingkatans = [
@@ -50,7 +48,7 @@ class PemilihanController extends Controller
                 ->orderBy("pm.created_at", 'DESC')
                 ->select('pm.*', 'p.nama_peserta', 'p.tipe');
 
-            if ($request->tipe != null) {
+            if ($request->tipe != null ) {
                 $query->where("p.tipe", $request->tipe);
             }
 
@@ -143,15 +141,7 @@ class PemilihanController extends Controller
             return "Siswa";
         }
 
-        if ($tipe == 2) {
-            return "Guru";
-        }
-
-        if ($tipe == 3) {
-            return "Karyawan";
-        }
-
-        return null;
+       return null;
     }
 
     public function checkStatus($status)

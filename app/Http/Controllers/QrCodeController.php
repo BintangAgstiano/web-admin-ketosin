@@ -14,8 +14,6 @@ class QrCodeController extends Controller
 {
     protected $tipeses = [
         '1' => "Siswa",
-        '2' => "Guru",
-        '3' => "Karyawan",
     ];
 
     protected $tingkatans = [
